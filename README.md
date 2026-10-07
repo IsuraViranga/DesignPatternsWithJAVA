@@ -1,18 +1,44 @@
-## Getting Started
+# Java Learning Playground
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Purpose
+
+This project is a personal practice space for learning **Java**, **data structures and algorithms**, and **design patterns**. The code here is written to understand concepts and try them out, not to build a production application.
+
+## What's Covered
+
+### Java Fundamentals
+- Classes, interfaces, constructors, and access modifiers
+- Collections (`HashMap`, arrays, 2D arrays)
+- Reading input with `Scanner`
+
+### Data Structures & Algorithms
+- **Linked list** node (`Node.java`)
+- **Sorting** (in `App.java`): bubble sort, selection sort, insertion sort, merge sort, quick sort
+- **Searching** (in `App.java`): binary search (recursive and iterative)
+- Counting characters with a `HashMap`
+
+### Design Patterns
+| Pattern | Files |
+|---|---|
+| Singleton | `Singleton.java` |
+| Factory | `VehicleFactory.java`, `Vehicle.java`, `Car.java`, `Van.java` |
+| Strategy | `PaymentStrategy.java`, `PaymentService.java`, `CardPayment.java`, `PaypalPayment.java` |
+| Adapter | `PaypalAdapter.java`, `Paypal.java`, `Payment.java` |
+| Observer | `Channel.java`, `YoutubeChannel.java`, `ObserverIn.java`, `UserOne.java` |
+| Decorator | `Coffe.java`, `SimpleCoffe.java`, `MilkCoffe.java` |
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+- `src`: Java source files
+- `bin`: compiled `.class` files (generated)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Running
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Open the folder in VS Code with the Java extension and run `App.java`, or from the terminal:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```bash
+javac -d bin src/*.java
+java -cp bin App
+```
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Uncomment the method calls in `App.main` to try out the different algorithms.
